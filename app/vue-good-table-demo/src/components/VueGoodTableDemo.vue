@@ -5,11 +5,8 @@
       :rows="rows"
       :search-options="{
     enabled: true,
-    trigger: 'enter',
     skipDiacritics: true,
-    searchFn: mySearchFn,
     placeholder: 'Search this table',
-    externalQuery: searchQuery
   }"
     />
   </div>
