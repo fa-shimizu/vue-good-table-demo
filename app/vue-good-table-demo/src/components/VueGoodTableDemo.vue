@@ -1,6 +1,17 @@
 <template>
   <div class="demo">
-    <VueGoodTable :columns="columns" :rows="rows" />
+    <VueGoodTable
+      :columns="columns"
+      :rows="rows"
+      :search-options="{
+    enabled: true,
+    trigger: 'enter',
+    skipDiacritics: true,
+    searchFn: mySearchFn,
+    placeholder: 'Search this table',
+    externalQuery: searchQuery
+  }"
+    />
   </div>
 </template>
 
@@ -39,7 +50,13 @@ export default {
         }
       ],
       rows: [
-        { id: 1, name: "John", age: 20, createdAt: "", score: 0.03343 },
+        {
+          id: 1,
+          name: "John",
+          age: 20,
+          createdAt: "",
+          score: 0.03343
+        },
         {
           id: 2,
           name: "Jane",
