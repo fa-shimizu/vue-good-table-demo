@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build && mv ./docs/ ../../",
+    "build": "vue-cli-service build && sh ./bin/move_dirs.sh",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

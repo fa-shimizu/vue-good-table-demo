@@ -1,4 +1,5 @@
 module.exports = {
-  publicPath: "/public/",
   outputDir: "docs",
+  assetsDir: "./",
+  publicPath: "./",
 };
