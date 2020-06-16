@@ -77,8 +77,8 @@ export default {
           field: "name",
           filterOptions: {
             enabled: true,
-            placeholder: "All",
-            filterDropdownItems: this.getDropdownItems("name")
+            placeholder: "Filter"
+            // filterDropdownItems: this.getDropdownItems("name")
           }
         },
         {
@@ -87,8 +87,8 @@ export default {
           type: "number",
           filterOptions: {
             enabled: true,
-            placeholder: "All",
-            filterDropdownItems: this.getDropdownItems("age")
+            placeholder: "Filter"
+            // filterDropdownItems: this.getDropdownItems("age")
           }
         },
         {
@@ -99,8 +99,8 @@ export default {
           dateOutputFormat: "MMM Do yy",
           filterOptions: {
             enabled: true,
-            placeholder: "All",
-            filterDropdownItems: this.getDropdownItems("createdAt")
+            placeholder: "Filter"
+            // filterDropdownItems: this.getDropdownItems("createdAt")
           }
         },
         {
@@ -109,8 +109,8 @@ export default {
           type: "percentage",
           filterOptions: {
             enabled: true,
-            placeholder: "All",
-            filterDropdownItems: this.getDropdownItems("score")
+            placeholder: "Filter"
+            // filterDropdownItems: this.getDropdownItems("score")
           }
         }
       ];
